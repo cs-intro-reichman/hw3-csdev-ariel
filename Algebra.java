@@ -49,7 +49,7 @@ public class Algebra {
 
 		if (x2 < 0) {
 		while (x2 != 0) {
-		x1--;
+		x1++;
 		x2++; }
 	}
 		return x1;
@@ -72,8 +72,8 @@ public class Algebra {
 	// Returns x^n (for n >= 0)
 	public static int pow(int x, int n) {
 		int result = 1;
-		for (int i = 0; i < x2; i++)
-		result = times(result, x1);
+		for (int i = 0; i < n; i++)
+		result = times(result, x);
 		return result;
 }
 
@@ -89,17 +89,17 @@ public class Algebra {
 
 	// Returns x1 % x2
 	public static int mod(int x1, int x2) {
-	int devide  = div(x1, x2);
-    int multi = times(devide, x2);
+	int divide  = div(x1, x2);
+    int multi = times(divide, x2);
     int module = minus(x1, multi);
     return module;
 }
 
 	// Returns the integer part of sqrt(x) 
 	public static int sqrt(int x) {
-	int x = 0;
-    while (times(x, x) <= a) {
-		x++; }
-		return minus(x, 1);
+	int n = 0;
+    while (times(n, n) <= x) {
+		n++; }
+		return minus(n, 1);
 }	  	  
 }
