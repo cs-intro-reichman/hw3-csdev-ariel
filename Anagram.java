@@ -28,14 +28,11 @@ public class Anagram {
 
 	// Returns true if the two given strings are anagrams, false otherwise.
 	public static boolean isAnagram(String str1, String str2) {
-		int length1 = str1.length();
-		int length2 = str2.length();
-
 		str1 = preProcess(str1);
 		str2 = preProcess(str2);
 
 		int[] alphabet = new int[26];
-		if (length1 != length2) {
+		if (str.length1() != str.length2()) {
 			return false;
 		}
 		for (int i = 0; i < length1; i++) {
