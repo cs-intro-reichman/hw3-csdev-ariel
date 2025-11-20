@@ -30,6 +30,10 @@ public class Anagram {
 	public static boolean isAnagram(String str1, String str2) {
 		int length1 = str1.length();
 		int length2 = str2.length();
+
+		str1 = preProcess(str1);
+		str2 = preProcess(str2);
+
 		int[] alphabet = new int[26];
 		if (length1 != length2) {
 			return false;
