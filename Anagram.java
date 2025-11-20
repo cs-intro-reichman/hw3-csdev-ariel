@@ -34,16 +34,18 @@ public class Anagram {
 		if (length1 != length2) {
 			return false;
 		}
-		for (int i = 0; i < length1; i++)
-				char ch = str1.charAt[i];
-			alphabet[ch - 'str1']++;
+		for (int i = 0; i < length1; i++) {
+				char ch = str1.charAt(i);
+			alphabet[ch - 'a']++; }
 		
-		for (int i = 0; i < length2; i++)
-				char ch = str2.charAt[i];
-			alphabet[ch - 'str1']--;
+		for (int i = 0; i < length2; i++) {
+				char ch = str2.charAt(i);
+			alphabet[ch - 'a']--; }
 		
-		for (int count : counts) {
-			if (count != 0) return false; }
+		for (int count : alphabet) {
+			if (count != 0) {
+				return false; }
+			}
 			return true;
 	}
 	   
@@ -66,6 +68,6 @@ public class Anagram {
         c[i] = c[n];
         c[n] = temp;
     }
-    return new String(chars);
+    return new String(c);
 	}
 }
