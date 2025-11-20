@@ -31,8 +31,11 @@ public class Anagram {
 		str1 = preProcess(str1);
 		str2 = preProcess(str2);
 
+		int length1 = str1.length();
+		int length2 = str2.length();
+
 		int[] alphabet = new int[26];
-		if (str.length1() != str.length2()) {
+		if (length1 != length2) {
 			return false;
 		}
 		for (int i = 0; i < length1; i++) {
