@@ -1,3 +1,6 @@
+// the while statement in the bisectionSolver is an example 
+// of clean well-spaced out code, do it everywhere:)
+
 // Computes the periodical payment necessary to pay a given loan.
 public class LoanCalc {
 	

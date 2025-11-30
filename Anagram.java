@@ -1,3 +1,8 @@
+// again try to keep indentations consistent
+// don't be scared to write more lines of code
+// the closing } of if/while statements should be written on the new line as a 
+// convention 
+
 /** Functions for checking if a given string is an anagram. */
 public class Anagram {
 	public static void main(String args[]) {
